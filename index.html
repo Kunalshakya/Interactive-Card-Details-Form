@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- google font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"/>
+		<!-- goolge font end -->
+
+		<link rel="stylesheet" href="styles/styles.css" />
+		<script src="js/script.js" defer></script>
+
+	</head>
+	<body>
+    
+		<main class="main-container">
+			<section class="card-container">
+				<div class="card-front">
+					<div class="icons">
+            <img src="/images/card-logo.svg" alt="">
+					</div>
+					<p class="front-card-num" id="frontCardNumber">0000 0000 0000 0000</p>
+					<div class="front-info">
+						<p class="front-name" id="frontCardName">Jane Appleseed</p>
+						<div class="exp-date-container">
+							<p class="front-exp" id="frontCardExpMonth">00</p>
+							<p>/</p>
+							<p id="frontCardExpYear">00</p>
+						</div>
+					</div>
+				</div>
+				<div class="card-back">
+					<img src="images/bg-card-back.png" alt="" />
+					<p class="back-cvv" id="backCardCvc">000</p>
+				</div>
+			</section>
+			<section class="card-info">
+				<form action="">
+					<div class="name">
+						<label for="name">Cardholder Name</label>
+						<input type="text" id="name" placeholder="e.g. Jane Appleseed"/>
+					</div>
+					<p class="name-error" id="nameError">Can't be blank</p>
+					<div class="card-number">
+						<label for="cardnumber">Card Number</label>
+						<input type="tel" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16"/>
+					</div>
+					<p class="number-error" id="numberError">Wrong format, numbers only</p>
+					<div class="date-section">
+						<div class="date-container">
+							<div class="month-year-container">
+								<label for="month">Exp. Date (MM/YY)</label>
+								<div class="dates">
+									<input type="tel" id="month" maxlength="2" placeholder="MM"/>
+									<input type="tel" class="year" id="year" maxlength="2" placeholder="YY"/>
+								</div>
+								<p class="date-error" id="dateError">Can't be blank</p>
+							</div>
+							<div class="cvc-container">
+								<label for="cvc">CVC</label>
+								<input type="tel" id="cvc" maxlength="3" placeholder="e.g. 123"/>
+								<p class="cvc-error" id="cvcError">Can't be blank</p>
+							</div>
+						</div>
+					</div>
+					<button type="button" id="btn" class="btn">Confirm</button>
+				</form>
+			</section>
+			<section class="thank-you">
+				<img src="images/icon-complete.svg" alt="" />
+				<h3>Thank You!</h3>
+				<p>We've added your card details</p>
+				<button type="button" class="btn" id="thankYouBtn">Continue</button>
+			</section>
+		</main>
+
+	</body>
+</html>

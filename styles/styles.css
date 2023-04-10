@@ -1,0 +1,327 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Red: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+  font-family: "space grotesk", sans-serif;
+}
+
+.main-container {
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 30% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*Front Card Image*/
+
+.card-front {
+  background-image: url(/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 3.125rem;
+  min-height: 15.3125rem;
+  position: relative;
+  right: 25%;
+}
+
+.front-card-num {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  position: relative;
+  top: 6rem;
+}
+
+.icons {
+  position: relative;
+  top: 1.5625rem;
+  left: 3.125rem;
+}
+
+.exp-date-container {
+  display: flex;
+}
+
+.front-info {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 3.125rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 1.5rem;
+  position: relative;
+  top: 7.5rem;
+}
+
+/* Back Card Image */
+
+.card-back {
+  position: relative;
+  right: 5%;
+}
+
+.back-cvv {
+  position: absolute;
+  top: 6.875rem;
+  right: 3.4375rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* Form */
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 35.9375rem;
+}
+
+form {
+  width: 100%;
+  padding: 0 6.25rem;
+}
+
+::placeholder {
+  color: rgba(100, 100, 100, 0.3);
+  font-weight: bold;
+  font-family: "space grotesk", sans-serif;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.name label {
+  margin-bottom: 0.3125rem;
+}
+
+.name input {
+  min-height: 2.5rem;
+  border-radius: 0.625rem;
+  padding-left: 0.625rem;
+  font-family: "space grotesk", sans-serif;
+  border: 2px solid rgba(100, 100, 100, 0.3);
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.card-number label {
+  margin-bottom: 0.3125rem;
+}
+
+.card-number input {
+  min-height: 2.5rem;
+  border-radius: 0.625rem;
+  padding-left: 0.625rem;
+  font-family: "space grotesk", sans-serif;
+  border: 2px solid rgba(100, 100, 100, 0.3);
+}
+
+.date-section {
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.date-container {
+  display: flex;
+  width: 100%;
+}
+
+.date-container label {
+  letter-spacing: 2px;
+}
+
+.month-year-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.dates input {
+  max-width: 45%;
+}
+
+.dates .year {
+  margin-left: 0.625rem;
+}
+
+.cvc-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.625rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.date-section label {
+  margin-bottom: 5px;
+}
+
+.date-container input {
+  min-height: 2.5rem;
+  border-radius: 0.625rem;
+  padding-left: 0.6rem;
+  font-family: "space grotesk", sans-serif;
+
+  border: 2px solid rgba(100, 100, 100, 0.3);
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 100%;
+  min-height: 3.125rem;
+  margin-top: 1.5rem;
+  border-radius: 0.625rem;
+  border: none;
+  background-color: var(--Very-dark-violet);
+  color: white;
+  font-family: "space grotesk", sans-serif;
+  box-shadow: 0 5px 5px rgba(100, 100, 100, 0.5);
+  cursor: pointer;
+}
+
+/* Thank You */
+
+.thank-you {
+  min-width: 35.9375rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6.25rem;
+}
+
+.thank-you img {
+  margin-bottom: 3.125rem;
+}
+
+.thank-you h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.thank-you p {
+  color: rgba(100, 100, 100, 0.7);
+  font-weight: bold;
+  margin-bottom: 1.875rem;
+}
+
+.thank-you button {
+  max-width: 31.25rem;
+}
+
+/* Errors */
+
+.name-error {
+  font-size: 0.625rem;
+  color: var(--Red);
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.number-error {
+  font-size: 0.625rem;
+  color: var(--Red);
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.date-error {
+  font-size: 0.625rem;
+  color: var(--Red);
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  text-transform: none;
+  display: none;
+}
+
+.cvc-error {
+  font-size: 0.625rem;
+  color: var(--Red);
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 1rem;
+  text-transform: none;
+  display: none;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .main-container {
+    background-image: url(/images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
+    height: 100vh;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  .card-back {
+    transform: translate(60px , -255px);
+    z-index: 0;
+  }
+
+  .card-front {
+    transform: translate(60px , 176px);
+    z-index: 1;
+  }
+
+  .card-info {
+    transform: translateY(-50px);
+  }
+
+}
