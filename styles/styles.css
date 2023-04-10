@@ -31,9 +31,7 @@ body {
 /*Front Card Image*/
 
 .card-front {
-  background-image: url('../images/bg-card-front.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: no-repeat 100% 100% url('../images/bg-card-front.png');
   margin-bottom: 3.125rem;
   min-height: 15.3125rem;
   position: relative;
