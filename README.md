@@ -8,10 +8,12 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [The challenge](#the-challenge)
   - [Expected behaviour](#expected-behaviour)
   - [Screenshot](#screenshot)
+- [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -39,11 +41,19 @@ Users should be able to:
 ### Screenshot
 
 - Desktop
+
 ![](/screenshorts/Screenshot%20(21).png)
 ![](/screenshorts/Screenshot%20(22).png)
 ![](/screenshorts/Screenshot%20(23).png)
+
 - Mobile
+
 ![](/screenshorts/Screenshot%20(24).png)
+
+## Links
+
+- Solution URL: [Explore the GitHub Repository](https://github.com/Kunalshakya/Interactive-Card-Details-Form)
+- Live Site URL: [ View the live website](https://kunalshakya.github.io/Interactive-Card-Details-Form/)
 
 
 ## My process
@@ -65,4 +75,10 @@ The project's layout is quite intricate due to the inclusion of images. My first
 
 ## Author
 
-- GitHub - [Kunal Shakya](https://github.com/Kunalshakya)
+- GitHub - [@Kunalshakay](https://github.com/Kunalshakya)
+- LinkedIn - [@kunal-shakya](https://www.linkedin.com/in/kunal-shakya-59323a259/)
+- Frontend Mentor - [@Kunalshakya](https://www.frontendmentor.io/profile/Kunalshakya)
+
+## Acknowledgments
+
+I give credits to myself for being able to complete this project without asking for help and or looking for answers on the internet.
