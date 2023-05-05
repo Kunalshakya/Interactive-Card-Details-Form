@@ -253,7 +253,7 @@ form {
 
 /* Errors */
 
-.name-error {
+.error {
   font-size: 0.625rem;
   color: var(--Red);
   font-weight: bold;
@@ -262,34 +262,7 @@ form {
   display: none;
 }
 
-.number-error {
-  font-size: 0.625rem;
-  color: var(--Red);
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 1rem;
-  display: none;
-}
 
-.date-error {
-  font-size: 0.625rem;
-  color: var(--Red);
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 1rem;
-  text-transform: none;
-  display: none;
-}
-
-.cvc-error {
-  font-size: 0.625rem;
-  color: var(--Red);
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 1rem;
-  text-transform: none;
-  display: none;
-}
 
 @media only screen and (max-width: 1300px) {
 

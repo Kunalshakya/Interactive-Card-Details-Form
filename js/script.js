@@ -9,8 +9,8 @@ const month = document.getElementById("month");
 const year = document.getElementById("year");
 const cvc = document.getElementById("cvc");
 const btn = document.getElementById("btn");
-const thankYouBtn = document.getElementById("thankYouBtn");
-const nameError = document.querySelector(".name-error");
+const continueBtn = document.getElementById("continueBtn");
+const nameError = document.getElementById("nameError");
 const numberError = document.getElementById("numberError");
 const dateError = document.getElementById("dateError");
 const cvcError = document.getElementById("cvcError");
@@ -63,7 +63,7 @@ btn.addEventListener("click", () => {
   
   // Name Error
 
-  if (/\S+/gi.test(cardName.value) == false) {
+  if (/[a-zA-Z]/gi.test(cardName.value) == false) {
     nameError.style.display = "block";
     cardName.style.border = "2px solid rgba(255, 0, 0, 0.3)";
   } else {
@@ -118,7 +118,6 @@ btn.addEventListener("click", () => {
 
 });
 
-thankYouBtn.addEventListener("click", () => {
+continueBtn.addEventListener("click", () => {
   window.location.reload();
 });
-

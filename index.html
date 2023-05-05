@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<title>Frontend Mentor | Advice generator app</title>	
 
 		<!-- google font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +21,7 @@
 			<section class="card-container">
 				<div class="card-front">
 					<div class="icons">
-						<img src="images/card-logo.svg">
+						<img src="images/card-logo.svg" alt="Card logo">
 					</div>
 					<p class="front-card-num" id="frontCardNumber">0000 0000 0000 0000</p>
 					<div class="front-info">
@@ -32,22 +34,22 @@
 					</div>
 				</div>
 				<div class="card-back">
-					<img src="images/bg-card-back.png" alt="" />
+					<img src="images/bg-card-back.png" alt="Card back" />
 					<p class="back-cvv" id="backCardCvc">000</p>
 				</div>
 			</section>
 			<section class="card-info">
-				<form action="">
+				<form>
 					<div class="name">
 						<label for="name">Cardholder Name</label>
 						<input type="text" id="name" placeholder="e.g. Jane Appleseed" maxlength="24"/>
 					</div>
-					<p class="name-error" id="nameError">Can't be blank</p>
+					<p class="error" id="nameError">Wrong format, alphabets only</p>
 					<div class="card-number">
 						<label for="cardnumber">Card Number</label>
 						<input type="tel" id="cardNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="16"/>
 					</div>
-					<p class="number-error" id="numberError">Wrong format, numbers only</p>
+					<p class="error" id="numberError">Wrong format, numbers only</p>
 					<div class="date-section">
 						<div class="date-container">
 							<div class="month-year-container">
@@ -56,12 +58,12 @@
 									<input type="tel" id="month" maxlength="2" placeholder="MM"/>
 									<input type="tel" class="year" id="year" maxlength="2" placeholder="YY"/>
 								</div>
-								<p class="date-error" id="dateError">Can't be blank</p>
+								<p class="error" id="dateError">Can't be blank</p>
 							</div>
 							<div class="cvc-container">
 								<label for="cvc">CVC</label>
 								<input type="tel" id="cvc" maxlength="3" placeholder="e.g. 123"/>
-								<p class="cvc-error" id="cvcError">Can't be blank</p>
+								<p class="error" id="cvcError">Can't be blank</p>
 							</div>
 						</div>
 					</div>
@@ -69,10 +71,10 @@
 				</form>
 			</section>
 			<section class="thank-you">
-				<img src="images/icon-complete.svg" alt="" />
+				<img src="./images/icon-complete.svg" alt="Checkmark icon" />
 				<h3>Thank You!</h3>
 				<p>We've added your card details</p>
-				<button type="button" class="btn" id="thankYouBtn">Continue</button>
+				<button type="button" class="btn" id="continueBtn">Continue</button>
 			</section>
 		</main>
 	</body>
